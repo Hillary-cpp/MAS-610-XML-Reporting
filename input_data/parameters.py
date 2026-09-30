@@ -19,3 +19,4 @@ OUTPUT_FILE = '/'.join([OUTPUT_PATH, "mapping.json"])
 
 SUBMISSION_EXCEL_FILE = '/'.join([INPUT_PATH, "MAS 6101003  Excel Submission Template Version 32 Dec 2021.xlsx"])
 XML_OUTPUT_FILE = '/'.join([OUTPUT_PATH, "output_xml_file.xml"])
+XSD_FILE = "input_data/MAS 610_1003 - XML Schema Dec 2021 (Version 3.0).txt"

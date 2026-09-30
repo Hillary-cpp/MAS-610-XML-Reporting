@@ -9,51 +9,73 @@ from lxml import etree
 
 
 def add_item(parent, name, value):
-    """
-    Add an MAS item element.
 
-    Example:
-        <B1_Amount type="item">
-            <value>1000</value>
-        </B1_Amount>
-    """
+    if value is None:
+        return
 
-    item = etree.SubElement(parent, name)
+    item = etree.SubElement(
+        parent,
+        name
+    )
     item.set("type", "item")
 
-    value_element = etree.SubElement(item, "value")
+    value_element = etree.SubElement(
+        item,
+        "value"
+    )
 
-    if value is not None:
-        value_element.text = str(value)
+    value_element.text = str(value)
 
 
 def create_xml(records, output_file):
     """
-    Create MAS 610 XML for Appendix B1 and B2.
-
-    Parameters
-    ----------
-    records : list[dict]
-        Records produced by extract_values().
-
-    output_file : str
-        Path of XML file to create.
+    Generate MAS 610 XML for B1 and B2.
     """
 
-    # -------------------------------------------------
-    # Root structure
-    # -------------------------------------------------
+    # =========================================================
+    # ROOT
+    # =========================================================
 
-    root = etree.Element("BU_MS610")
+    root = etree.Element(
+        "BU_MS610",
+        type="schema",
+        guid="d041ac61-ff6b-43f1-981f-5dc1b671b545",
+        versionNumber="4"
+    )
 
     submission = etree.SubElement(
         root,
         "BU_MS610"
     )
+    submission.set("type", "group")
 
-    # -------------------------------------------------
-    # Split records into B1 and B2
-    # -------------------------------------------------
+
+    # =========================================================
+    # A1 STRUCTURE
+    # =========================================================
+
+    a1_outer = etree.SubElement(
+        submission,
+        "A1"
+    )
+    a1_outer.set("type", "group")
+
+    a1_list = etree.SubElement(
+        a1_outer,
+        "A1"
+    )
+    a1_list.set("type", "list")
+
+    a1_group = etree.SubElement(
+        a1_list,
+        "A1_x0020_Repeat_x0020_Group"
+    )
+    a1_group.set("type", "group")
+
+
+    # =========================================================
+    # Separate B1 / B2 records
+    # =========================================================
 
     b1_records = [
         record
@@ -67,14 +89,15 @@ def create_xml(records, output_file):
         if record["sheet"].startswith("B2")
     ]
 
-    # -------------------------------------------------
-    # B1 - Statement of Financial Position: Assets
-    # -------------------------------------------------
+
+    # =========================================================
+    # B1 - ASSETS
+    # =========================================================
 
     if b1_records:
 
         b1 = etree.SubElement(
-            submission,
+            a1_group,
             "B1"
         )
         b1.set("type", "group")
@@ -94,11 +117,12 @@ def create_xml(records, output_file):
             group.set("type", "group")
 
             # Amount
-            add_item(
-                group,
-                "B1_Amount",
-                record["value"]
-            )
+            if record["value"] is not None:
+                add_item(
+                    group,
+                    "B2_Amount",
+                    record["value"]
+                )
 
             # Asset dimension
             asset = record["dimensions"].get(
@@ -111,15 +135,15 @@ def create_xml(records, output_file):
                 asset
             )
 
-    # -------------------------------------------------
-    # B2 - Statement of Financial Position:
-    #      Liabilities and Equity
-    # -------------------------------------------------
+
+    # =========================================================
+    # B2 - LIABILITIES AND EQUITY
+    # =========================================================
 
     if b2_records:
 
         b2 = etree.SubElement(
-            submission,
+            a1_group,
             "B2"
         )
         b2.set("type", "group")
@@ -139,11 +163,12 @@ def create_xml(records, output_file):
             group.set("type", "group")
 
             # Amount
-            add_item(
-                group,
-                "B2_Amount",
-                record["value"]
-            )
+            if record["value"] is not None:
+                add_item(
+                    group,
+                    "B2_Amount",
+                    record["value"]
+                    )
 
             # Liability / equity dimension
             liability = record["dimensions"].get(
@@ -156,9 +181,10 @@ def create_xml(records, output_file):
                 liability
             )
 
-    # -------------------------------------------------
-    # Write XML
-    # -------------------------------------------------
+
+    # =========================================================
+    # WRITE XML
+    # =========================================================
 
     tree = etree.ElementTree(root)
 
