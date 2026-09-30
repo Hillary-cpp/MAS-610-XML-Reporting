@@ -183,10 +183,12 @@ Generated artifacts are written to the `output` directory.
 
 ## Output
 
-The process produces intermediate and final outputs including:
 
-- `mapping.json` – structured Excel-to-MAS mapping
-- Generated MAS XML submission
-- XSD validation result / validation errors
+The process generates:
+
+- `mapping.json` – structured Excel-to-MAS mapping generated from the MAS mapping workbook.
+- `output_xml_file.xml` – generated MAS 610 XML submission covering B1 and B2.
+
+The generated XML is subsequently validated against the MAS XSD. The validation status and any schema validation errors are displayed in the console.
 
 A successful validation confirms that the generated XML conforms to the supplied MAS XML schema for the implemented scope.
