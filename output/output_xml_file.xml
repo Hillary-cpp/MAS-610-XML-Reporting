@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<BU_MS610>
+  <BU_MS610>
+    <B1 type="group">
+      <BU_MS610_B1 type="list">
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>CashBalances</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>AmountsReceivableUnderReverseRepurchaseAgreements</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>PositiveFairValuesForFinancialDerivatives</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>NegotiableCertificatesDeposit</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>DebtSecurities</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>EquityInvestments</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>LoansAdvances</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>BillsDiscountedPurchased</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>IntangibleAssets</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>PropertiesEquipment</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>AssetsHeldForSale</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>OtherAssets_Gold</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>OtherAssets_PreciousMetals</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>OtherAssets_Commodities</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>OtherAssets_CashOtherCollateralsPaidSecuritiesBorrowed</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>OtherAssets_CashOtherCollateralsPaidDerivativeContracts</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>OtherAssets_DeferredTaxAssets</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>OtherAssets_SuspenseAccount</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>OtherAssets_Others</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+        <BU_MS610_B1_x0020_Repeat_x0020_Group type="group">
+          <B1_Amount type="item">
+            <value/>
+          </B1_Amount>
+          <Bk_Sfp_Assets type="item">
+            <value>OtherAssets_InsuranceFundInvestmentAssets</value>
+          </Bk_Sfp_Assets>
+        </BU_MS610_B1_x0020_Repeat_x0020_Group>
+      </BU_MS610_B1>
+    </B1>
+    <B2 type="group">
+      <BU_MS610_B2 type="list">
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>TotalLiabilities_DepositsBalances</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>TotalLiabilities_AmountsPayableUnderRepurchaseAgreements</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>TotalLiabilities_NegativeFairValuesForFinancialDerivatives</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>TotalLiabilities_BillsPayable</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>TotalLiabilities_NegotiableCertificatesDeposits</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>DebtSecurities_SubordinatedTermDebts</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>DebtSecurities_CommercialPapers</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>DebtSecurities_Others</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>TotalLiabilities_LiabilitiesOfDisposalGroupsHeldForSale</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>OtherLiabilities_CashOtherCollateralsReceivedSecuritiesLent</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>OtherLiabilities_CashOtherCollateralsReceivedDerivativeContracts</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>OtherLiabilities_CurrentTaxLiabilities</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>OtherLiabilities_DeferredTaxLiabilities</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>OtherLiabilities_SuspenseAccounts</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>OtherLiabilities_ShortsaleSecurities</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>OtherLiabilities_Others</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>TotalLiabilities_LiabilitiesUnderInsuranceContracts</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>TotalEquity_ShareCapital</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value/>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>TotalEquity_OtherEquityInstruments</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>Reserves_RevenueReserves</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>Reserves_OtherReserves</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+        <BU_MS610_B2_x0020_Repeat_x0020_Group type="group">
+          <B2_Amount type="item">
+            <value/>
+          </B2_Amount>
+          <Bk_Sfp_Liabilities type="item">
+            <value>TotalEquity_NonControllingInterests</value>
+          </Bk_Sfp_Liabilities>
+        </BU_MS610_B2_x0020_Repeat_x0020_Group>
+      </BU_MS610_B2>
+    </B2>
+  </BU_MS610>
+</BU_MS610>

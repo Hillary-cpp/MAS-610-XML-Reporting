@@ -1,0 +1,387 @@
+[
+    {
+        "sheet": "B1(1)",
+        "cell": "C8",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "CashBalances"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C9",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "AmountsReceivableUnderReverseRepurchaseAgreements"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C10",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "PositiveFairValuesForFinancialDerivatives"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C11",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "NegotiableCertificatesDeposit"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C12",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "DebtSecurities"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C13",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "EquityInvestments"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C14",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "LoansAdvances"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C15",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "BillsDiscountedPurchased"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C16",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "IntangibleAssets"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C17",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "PropertiesEquipment"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C18",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "AssetsHeldForSale"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C20",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "OtherAssets_Gold"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C21",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "OtherAssets_PreciousMetals"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C22",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "OtherAssets_Commodities"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C23",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "OtherAssets_CashOtherCollateralsPaidSecuritiesBorrowed"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C24",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "OtherAssets_CashOtherCollateralsPaidDerivativeContracts"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C25",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "OtherAssets_DeferredTaxAssets"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C26",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "OtherAssets_SuspenseAccount"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C27",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "OtherAssets_Others"
+        }
+    },
+    {
+        "sheet": "B1(1)",
+        "cell": "C28",
+        "metric": "B1_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Assets": "OtherAssets_InsuranceFundInvestmentAssets"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C8",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "TotalLiabilities_DepositsBalances"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C9",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "TotalLiabilities_AmountsPayableUnderRepurchaseAgreements"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C10",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "TotalLiabilities_NegativeFairValuesForFinancialDerivatives"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C11",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "TotalLiabilities_BillsPayable"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C12",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "TotalLiabilities_NegotiableCertificatesDeposits"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C14",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "DebtSecurities_SubordinatedTermDebts"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C15",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "DebtSecurities_CommercialPapers"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C16",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "DebtSecurities_Others"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C17",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "TotalLiabilities_LiabilitiesOfDisposalGroupsHeldForSale"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C19",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "OtherLiabilities_CashOtherCollateralsReceivedSecuritiesLent"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C20",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "OtherLiabilities_CashOtherCollateralsReceivedDerivativeContracts"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C21",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "OtherLiabilities_CurrentTaxLiabilities"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C22",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "OtherLiabilities_DeferredTaxLiabilities"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C23",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "OtherLiabilities_SuspenseAccounts"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C24",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "OtherLiabilities_ShortsaleSecurities"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C25",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "OtherLiabilities_Others"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C26",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "TotalLiabilities_LiabilitiesUnderInsuranceContracts"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C29",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "TotalEquity_ShareCapital"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C30",
+        "metric": "B2_Equity_ShareCap_ofWhichTreasShares",
+        "datatype": "Bk_Number 19 - 9",
+        "dimensions": {}
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C31",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "TotalEquity_OtherEquityInstruments"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C33",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "Reserves_RevenueReserves"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C34",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "Reserves_OtherReserves"
+        }
+    },
+    {
+        "sheet": "B2(1)",
+        "cell": "C35",
+        "metric": "B2_Amount_x000D_",
+        "datatype": "Bk_Number 19 - 9_x000D_",
+        "dimensions": {
+            "Bk_Sfp_Liabilities": "TotalEquity_NonControllingInterests"
+        }
+    }
+]
