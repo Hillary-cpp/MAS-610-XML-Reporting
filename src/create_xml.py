@@ -9,6 +9,22 @@ from lxml import etree
 
 
 def add_item(parent, name, value):
+    """
+    Add a populated MAS item element to an XML parent.
+
+    No element is created when the supplied value is None.
+
+    Parameters
+    ----------
+    parent : lxml.etree._Element
+        Parent XML element.
+
+    name : str
+        MAS XML element name.
+
+    value : object
+        Value to write to the nested <value> element.
+    """
 
     if value is None:
         return
@@ -29,7 +45,22 @@ def add_item(parent, name, value):
 
 def create_xml(records, output_file):
     """
-    Generate MAS 610 XML for B1 and B2.
+    Generate an MAS 610 XML submission for Appendices B1 and B2.
+
+    Parameters
+    ----------
+    records : list[dict]
+        Structured reporting records produced by extract_values().
+        Each record contains its source sheet, metric, dimensions and value.
+
+    output_file : str
+        Destination path for the generated XML file.
+
+    Notes
+    -----
+    The XML hierarchy is explicitly modelled from the MAS XSD. B1 and B2
+    records are separated using their source worksheet and represented
+    through their corresponding MAS repeat-group structures.
     """
 
     # =========================================================
@@ -49,7 +80,7 @@ def create_xml(records, output_file):
     )
     submission.set("type", "group")
 
-
+    # Build the A1 hierarchy required by the MAS XSD before B1/B2.
     # =========================================================
     # A1 STRUCTURE
     # =========================================================
@@ -74,21 +105,31 @@ def create_xml(records, output_file):
 
 
     # =========================================================
-    # Separate B1 / B2 records
+    # ROUTE RECORDS TO B1 / B2
     # =========================================================
+    
+    # Route extracted records to the relevant MAS appendix based on
+    # their source worksheet. 
+    ''' 
+    For every extracted record
+        ↓
+    check source sheet
+        ↓
+    B1 → B1 records
+    B2 → B2 records
+    '''
 
-    b1_records = [
-        record
-        for record in records
-        if record["sheet"].startswith("B1")
-    ]
-
-    b2_records = [
-        record
-        for record in records
-        if record["sheet"].startswith("B2")
-    ]
-
+    b1_records = []
+    b2_records = []
+    
+    for record in records:
+       sheet = record["sheet"]
+    
+       if sheet.startswith("B1"):
+            b1_records.append(record)
+    
+       elif sheet.startswith("B2"):
+            b2_records.append(record)
 
     # =========================================================
     # B1 - ASSETS
@@ -108,6 +149,7 @@ def create_xml(records, output_file):
         )
         b1_list.set("type", "list")
 
+        # Each mapped B1 record is represented as one B1 repeat group.
         for record in b1_records:
 
             group = etree.SubElement(
@@ -120,7 +162,7 @@ def create_xml(records, output_file):
             if record["value"] is not None:
                 add_item(
                     group,
-                    "B2_Amount",
+                    "B1_Amount",
                     record["value"]
                 )
 
@@ -153,7 +195,8 @@ def create_xml(records, output_file):
             "BU_MS610_B2"
         )
         b2_list.set("type", "list")
-
+        
+        # Each mapped B2 record is represented as one B2 repeat group.
         for record in b2_records:
 
             group = etree.SubElement(

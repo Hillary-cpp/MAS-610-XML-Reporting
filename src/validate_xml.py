@@ -11,6 +11,27 @@ from lxml import etree
 
 
 def validate_xml(xml_file, xsd_file):
+    """
+    Validate an XML submission against the MAS 610 XSD.
+
+    Parameters
+    ----------
+    xml_file : str
+        Path to the generated MAS XML submission.
+
+    xsd_file : str
+        Path to the MAS XSD schema file.
+
+    Returns
+    -------
+    bool
+        True when the XML conforms to the XSD; otherwise False.
+
+    Notes
+    -----
+    Validation failures are printed from the lxml schema error log,
+    including the XML line number and validation message.
+    """
 
     # Read MAS XSD text using Windows encoding
     with open(xsd_file, "r", encoding="cp1252") as f:

@@ -14,8 +14,21 @@ import json
 from openpyxl import load_workbook 
 
 
+"""
+Main driver for the MAS 610 Excel-to-XML conversion process.
 
-# 1) first step: create mapping based on MAS provided Excel templates and mapping files
+The module orchestrates the end-to-end reporting workflow:
+
+1. Extract MAS XML-to-Excel mapping metadata from the mapping workbook.
+2. Read reporting values from the MAS Excel submission template.
+3. Convert the extracted records into MAS 610 XML format.
+4. Validate the generated XML against the official MAS XSD schema.
+
+Configuration such as input/output file paths and worksheets is
+maintained separately in input_data.parameters.
+"""
+
+## Step 1: Extract MAS mapping metadata from Excel cell comments.
 
 extract_mapping(
     input_file=MAPPING_FILE,
@@ -23,13 +36,13 @@ extract_mapping(
     output_file=OUTPUT_FILE
 )
 
-#2) extract values from Exel submission files and output to a list of dictionaries that contains sheet name, cell name, metric name, value etc
+# Step 2: Read submission values using the generated cell mapping.
 records = extract_values(SUBMISSION_EXCEL_FILE,OUTPUT_FILE )
 
-#3) convert the list of dictionaries from the previous step to XML file
+# Step 3: Generate the MAS 610 XML submission.
 create_xml(records,XML_OUTPUT_FILE )
 
-#4) validate XML output file
+# Step 4: Validate the generated XML against the MAS XSD.
 validate_xml(
     XML_OUTPUT_FILE,
     XSD_FILE

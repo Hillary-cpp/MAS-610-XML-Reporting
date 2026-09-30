@@ -14,12 +14,15 @@ import openpyxl
 
 def parse_mapping_comment(comment_text):
     """
-    Convert a MAS cell comment into structured mapping metadata.
-
-    Example comment:
-        Metric = B1_Amount
-        Data Type = Bk_Number 19 - 9
-        Bk_Sfp_Assets = CashBalances
+    Extract MAS XML-to-Excel mapping metadata from the official mapping workbook.
+    
+    MAS mapping information is stored in Excel cell comments. This module
+    parses those comments and converts the relevant metadata into a structured
+    JSON mapping containing the source worksheet, cell, metric, datatype and
+    dimensions.
+    
+    The generated mapping is subsequently used to extract reporting values
+    from the MAS Excel submission template.
     """
 
     result = {
