@@ -5,6 +5,26 @@ Created on Tue Sep 29 15:51:26 2026
 @author: rmili
 """
 
+"""
+Central configuration for the MAS 610 Excel-to-XML process.
+
+The input files are selected from the MAS Notice 610 reference materials
+according to their role in the conversion process:
+
+1. XML Schema–Excel Submission Template Mapping
+   Used to identify the relationship between Excel cells and MAS XML
+   metrics, datatypes and dimensions.
+
+2. MAS 610/1003 Excel Submission Template
+   Used as the source workbook from which the actual B1 and B2 reporting
+   values are extracted.
+
+3. MAS 610/1003 XML Schema (XSD)
+   Used as the authoritative schema for validating the structure,
+   datatypes and permitted values of the generated XML submission.
+
+The assessment scope is limited to Appendix B1 and B2.
+"""
 
 INPUT_PATH ="input_data"
 OUTPUT_PATH = "output"
