@@ -65,9 +65,11 @@ This separates Excel cell locations from the XML-generation logic.
 The XML generation logic was developed iteratively using the MAS XSD as
 the validation authority.
 
-An initial XML structure was generated based on the interpretation of the
-MAS mapping and submission requirements. The generated XML was then
-validated against the official MAS XSD using `lxml.etree.XMLSchema`.
+The B1/B2 XML structure is explicitly coded in create_xml.py and verified against the MAS XSD, while reporting values and dimensions are populated dynamically from the extracted mapping records.
+
+For Appendix B1, each mapped asset amount and dimension combination is converted into the corresponding B1 repeat-group structure.
+
+For Appendix B2, each mapped liability/equity amount and dimension combination is converted into the corresponding B2 repeat-group structure.
 
 The validation results were used to identify structural and data-related
 issues in the generated XML. For example, initial validation reported that
@@ -77,11 +79,6 @@ To investigate this structural issue, `helper.py` was created as a
 diagnostic utility to locate `B1` in the XSD and walk upwards through its
 parent elements.
 
-For Appendix B1, each mapped asset amount and dimension combination is converted into the corresponding B1 repeat-group structure.
-
-For Appendix B2, each mapped liability/equity amount and dimension combination is converted into the corresponding B2 repeat-group structure.
-
-The MAS XML hierarchy is explicitly modelled in the XML generator, while the reporting values and dimensions are populated dynamically from the extracted mapping records.
 
 ## XSD Hierarchy Inspection Helper
 
@@ -139,8 +136,8 @@ MAS-610-XML-Reporting/
 │   ├── extract_values.py
 │   ├── create_xml.py
 │   └── validate_xml.py
-    └── helper.py
-
+│   └── helper.py
+│
 │
 ├── requirements.txt
 ├── .gitignore
