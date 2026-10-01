@@ -62,13 +62,36 @@ This separates Excel cell locations from the XML-generation logic.
 
 ## XML Generation
 
-The XML hierarchy is constructed according to the MAS 610 XML Schema Definition (XSD).
+The XML generation logic was developed iteratively using the MAS XSD as
+the validation authority.
+
+An initial XML structure was generated based on the interpretation of the
+MAS mapping and submission requirements. The generated XML was then
+validated against the official MAS XSD using `lxml.etree.XMLSchema`.
+
+The validation results were used to identify structural and data-related
+issues in the generated XML. For example, initial validation reported that
+the `B1` element was not expected at its generated location.
+
+To investigate this structural issue, `helper.py` was created as a
+diagnostic utility to locate `B1` in the XSD and walk upwards through its
+parent elements.
 
 For Appendix B1, each mapped asset amount and dimension combination is converted into the corresponding B1 repeat-group structure.
 
 For Appendix B2, each mapped liability/equity amount and dimension combination is converted into the corresponding B2 repeat-group structure.
 
 The MAS XML hierarchy is explicitly modelled in the XML generator, while the reporting values and dimensions are populated dynamically from the extracted mapping records.
+
+## XSD Hierarchy Inspection Helper
+
+`helper.py` is a development and diagnostic utility used to inspect the
+hierarchical structure of the MAS XSD.
+
+During development, initial XSD validation indicated that the B1 element
+had been placed under an incorrect parent hierarchy. The helper was therefore
+used to locate the B1 element in the XSD and walk upwards through its parent
+elements.
 
 ## Validation
 
@@ -85,6 +108,8 @@ The validation step checks, among other schema constraints:
 Validation errors are reported with their XML line number and the corresponding schema-validation message.
 
 XML generation and validation are kept as separate processing stages so that generation logic and validation controls remain independently testable.
+
+
 
 ## Assumptions
 
